@@ -1,0 +1,99 @@
+:root {
+  --bg: #ffffff;
+  --surface: #f6f7f9;
+  --text: #15181c;
+  --muted: #5b6672;
+  --line: #e3e7ec;
+  --accent: #2d6cf6;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1419;
+    --surface: #171c22;
+    --text: #e7ecf2;
+    --muted: #9aa7b4;
+    --line: #262d36;
+    --accent: #5b92ff;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1419;
+  --surface: #171c22;
+  --text: #e7ecf2;
+  --muted: #9aa7b4;
+  --line: #262d36;
+  --accent: #5b92ff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0 16px 64px;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+.wrap { max-width: 720px; margin: 0 auto; }
+
+header {
+  padding: 40px 0 24px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 32px;
+}
+
+h1 { font-size: 28px; line-height: 1.25; margin: 0 0 8px; letter-spacing: -0.02em; }
+h2 { font-size: 20px; line-height: 1.3; margin: 36px 0 12px; letter-spacing: -0.01em; }
+h3 { font-size: 16px; margin: 24px 0 8px; }
+
+.lede { color: var(--muted); margin: 0; }
+.updated { color: var(--muted); font-size: 14px; margin: 12px 0 0; }
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+ul, ol { padding-left: 22px; }
+li { margin: 6px 0; }
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin: 20px 0;
+}
+
+.card h2, .card h3 { margin-top: 0; }
+
+.nav { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.nav a {
+  display: inline-block;
+  padding: 11px 18px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 15px;
+}
+.nav a:hover { border-color: var(--accent); text-decoration: none; }
+
+footer {
+  margin-top: 48px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 14px;
+}
+
+code {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 1px 5px;
+  font-size: 0.9em;
+}
+
+.back { display: inline-block; margin-bottom: 20px; font-size: 15px; }

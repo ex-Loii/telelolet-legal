@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kebijakan Privasi — Telelolet</title>
+<meta name="description" content="Kebijakan Privasi aplikasi Telelolet untuk Android.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+<a class="back" href="./">← Telelolet</a>
+
+<header>
+  <h1>Kebijakan Privasi</h1>
+  <p class="lede">Aplikasi Telelolet untuk Android (<code>app.telelolet</code>)</p>
+  <p class="updated">Berlaku sejak 10 November 2026</p>
+</header>
+
+<p>Telelolet adalah aplikasi pesan untuk Android, dibuat dari kode sumber terbuka
+Telegram untuk Android dan berlisensi GNU GPL v2 atau lebih baru. Telelolet
+<strong>bukan aplikasi resmi Telegram</strong> dan tidak berafiliasi dengan Telegram
+Messenger LLP.</p>
+
+<div class="card">
+  <h3>Ringkasnya</h3>
+  <ul>
+    <li>Kami <strong>tidak menjual</strong> data Anda dan <strong>tidak memasang iklan pihak ketiga</strong>.</li>
+    <li>Kami <strong>tidak mengumpulkan</strong> nama, nomor telepon, daftar kontak, lokasi, maupun isi percakapan Anda.</li>
+    <li>Kami tidak memakai ID iklan (Advertising ID) dan tidak melacak Anda antar-aplikasi.</li>
+    <li>Pesan, kontak, dan media Anda ditangani oleh Telegram, bukan oleh kami.</li>
+  </ul>
+</div>
+
+<h2>1. Hubungan dengan Telegram</h2>
+<p>Telelolet tersambung ke server Telegram memakai Telegram API. Semua percakapan,
+kontak, media, dan data akun Anda diproses oleh Telegram sesuai
+<a href="https://telegram.org/privacy" rel="noopener">Kebijakan Privasi Telegram</a>
+dan tunduk pada Ketentuan Layanan Telegram. Dokumen ini hanya menjelaskan data
+tambahan yang ditangani oleh fitur khas Telelolet.</p>
+
+<h2>2. Data yang kami tangani</h2>
+
+<h3>a. Statistik pemakaian anonim (bisa dimatikan)</h3>
+<p>Paling sering sekali sehari, aplikasi mengirim laporan ringkas ke bot resmi kami
+berisi <strong>hanya</strong> tiga hal: nomor build aplikasi, versi Android, dan kode
+bahasa aplikasi. Contoh isi laporan sesungguhnya: <code>tl1 b=34 a=34 l=id</code>.</p>
+<p>Laporan ini dikirim melalui Telegram, jadi Telegram menyertakan ID akun Telegram
+Anda kepada bot. Begitu diterima, ID tersebut <strong>langsung diubah menjadi kode acak
+satu arah (HMAC-SHA256 dengan kunci rahasia) dan hanya bentuk acak itu yang
+disimpan</strong>. ID asli Anda tidak pernah disimpan, dan kode acak itu tidak bisa
+dikembalikan menjadi identitas Anda. Gunanya hanya untuk menghitung jumlah pengguna
+aktif dan sebaran versi.</p>
+<p>Fitur ini dapat dimatikan kapan saja di <strong>Pengaturan → Statistik</strong>.</p>
+
+<h3>b. Room Event</h3>
+<p>Jika Anda membuat atau mengikuti Room Event, bot event memproses nama tampilan,
+username, dan ID Telegram Anda. Data ini dipakai untuk pendaftaran peserta,
+pengumuman pemenang, sertifikat, dan piala — tidak untuk hal lain, dan tidak
+dibagikan ke pihak ketiga. Penyelenggara event dapat melihat daftar peserta
+event-nya sendiri.</p>
+
+<h3>c. Lencana piala</h3>
+<p>Lencana piala pada profil dicocokkan <strong>di perangkat Anda sendiri</strong> memakai
+daftar yang sudah di-hash. Bot tidak diberi tahu profil siapa yang Anda buka.</p>
+
+<h3>d. Market (jual-beli)</h3>
+<p>Iklan di Market adalah postingan publik dari grup dan channel Telegram; kami tidak
+menyimpan salinannya. Jika Anda melaporkan sebuah iklan, laporan yang berisi alasan
+pilihan Anda dan cuplikan iklan tersebut dikirim ke admin untuk ditindaklanjuti.
+Preferensi Anda (sumber yang disembunyikan) disimpan hanya di perangkat Anda.</p>
+<p>Transaksi jual-beli terjadi langsung antara Anda dan penjual. Telelolet
+<strong>bukan perantara pembayaran</strong> dan tidak memproses uang Anda.</p>
+
+<h3>e. Laporan error (crash)</h3>
+<p>Jika aplikasi berhenti mendadak, catatan teknis error disimpan di perangkat Anda.
+Anda yang memutuskan apakah mau mengirimkannya ke pengembang. Laporan ini
+<strong>tidak berisi isi percakapan</strong>.</p>
+
+<h2>3. Yang tidak kami kumpulkan</h2>
+<ul>
+  <li>Isi pesan, foto, video, atau berkas Anda.</li>
+  <li>Nama asli, nomor telepon, atau daftar kontak.</li>
+  <li>Lokasi perangkat.</li>
+  <li>ID iklan, dan kami tidak melakukan pelacakan antar-aplikasi.</li>
+  <li>Data biometrik, kesehatan, atau keuangan.</li>
+</ul>
+
+<h2>4. Berbagi data</h2>
+<p>Kami tidak menjual, menyewakan, atau menukar data Anda. Data tidak dibagikan ke
+pihak ketiga mana pun kecuali: (a) Telegram, sebagai penyedia layanan pesan yang
+Anda pakai; dan (b) bila diwajibkan oleh hukum yang berlaku.</p>
+
+<h2>5. Penyimpanan dan penghapusan</h2>
+<ul>
+  <li><strong>Statistik anonim</strong>: hanya berupa kode acak dan hitungan, disimpan selama
+      layanan berjalan. Karena sudah anonim, data ini tidak bisa ditelusuri kembali ke Anda.</li>
+  <li><strong>Data Room Event</strong>: disimpan selama event berlangsung dan untuk catatan
+      pemenang. Anda dapat meminta penghapusan data event Anda melalui kontak di bawah.</li>
+  <li><strong>Data di perangkat</strong> (preferensi, catatan error, cache): dihapus seluruhnya
+      saat Anda menghapus data aplikasi atau mencopot pemasangan lewat pengaturan Android.</li>
+</ul>
+
+<h2>6. Keamanan</h2>
+<p>Hubungan ke Telegram memakai protokol terenkripsi milik Telegram (MTProto). Data
+pada layanan kami disimpan di server yang kami kelola dengan akses terbatas. Tidak ada
+sistem yang sepenuhnya kebal, jadi kami tidak dapat menjanjikan keamanan mutlak.</p>
+
+<h2>7. Anak-anak</h2>
+<p>Telelolet tidak ditujukan untuk anak di bawah 13 tahun, dan kami tidak dengan
+sengaja mengumpulkan data dari mereka. Anda juga harus memenuhi persyaratan usia
+pada Ketentuan Layanan Telegram. Jika Anda berusia di bawah umur dewasa di wilayah
+Anda, gunakan aplikasi ini dengan izin orang tua atau wali.</p>
+
+<h2>8. Izin aplikasi</h2>
+<ul>
+  <li><strong>Notifikasi dan berjalan di latar belakang</strong>: agar pesan masuk tepat waktu.</li>
+  <li><strong>Kamera, mikrofon, penyimpanan, kontak, lokasi</strong>: hanya diminta saat Anda
+      memakai fitur yang membutuhkannya (mengirim foto, pesan suara, berkas, dan sejenisnya),
+      dan dapat ditolak.</li>
+  <li>Telelolet <strong>tidak</strong> meminta izin memasang paket aplikasi dan
+      <strong>tidak memperbarui dirinya sendiri</strong>.</li>
+</ul>
+
+<h2>9. Perubahan kebijakan</h2>
+<p>Bila kebijakan ini berubah, tanggal "berlaku sejak" di atas diperbarui dan
+perubahan penting diumumkan di channel resmi Telelolet.</p>
+
+<h2>10. Kontak</h2>
+<p>Pertanyaan atau permintaan terkait privasi dan penghapusan data dapat dikirim ke:</p>
+<ul>
+  <li>Bot resmi: <a href="https://t.me/Telelolet_apkbot" rel="noopener">@Telelolet_apkbot</a></li>
+  <li>Channel resmi: <a href="https://t.me/telelolet_app" rel="noopener">@telelolet_app</a></li>
+</ul>
+
+<footer>
+  Telelolet · <a href="terms.html">Ketentuan Layanan</a> ·
+  Bukan aplikasi resmi Telegram.
+</footer>
+
+</div>
+</body>
+</html>
