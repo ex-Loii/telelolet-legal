@@ -1,0 +1,27 @@
+name: Rilis APK
+
+# Branch "apk" hanya berisi berkas APK terbaru. Setiap kali diperbarui, berkas itu
+# diterbitkan sebagai rilis sehingga bisa diunduh langsung dari halaman web:
+# https://github.com/ex-Loii/telelolet-legal/releases/latest/download/Telelolet.apk
+on:
+  push:
+    branches: [apk]
+
+permissions:
+  contents: write
+
+jobs:
+  rilis:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Terbitkan
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          source versi.txt
+          TAG="telelolet-$build"
+          gh release delete "$TAG" --yes --cleanup-tag 2>/dev/null || true
+          gh release create "$TAG" Telelolet.apk --target main --latest \
+            --title "Telelolet $versi (build $build)" \
+            --notes "APK Telelolet untuk Android. Unduh berkas Telelolet.apk di bawah, lalu pasang."
